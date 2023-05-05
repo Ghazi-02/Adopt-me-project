@@ -1,4 +1,3 @@
-
 const Pet = (props) => {
     return (
     <div>
