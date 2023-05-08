@@ -1,13 +1,13 @@
 import Pet from "./Pet";
 
-const Results = ({pets}) => {
+const Results = ({ pets }) => {
   return (
     <div className="search">
       {!pets.length ? (
         <h1>No Pets Found</h1>
       ) : (
         pets.map((pet) => {
-          return(
+          return (
             <Pet
               animal={pet.animal}
               name={pet.name}
@@ -17,11 +17,11 @@ const Results = ({pets}) => {
               location={`${pet.city}.${pet.state}`}
               id={pet.id}
             />
-          ) 
+          );
         })
       )}
     </div>
   );
 };
 
-export default Results
+export default Results;
